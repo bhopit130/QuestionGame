@@ -1,6 +1,6 @@
 
 /* ===== GameShow App (Teacher + Student) ===== */
-const API_BASE = 'YOUR_APPS_SCRIPT_WEB_APP_URL'; // <<<< set this after deploying GAS
+const API_BASE = 'https://script.google.com/macros/s/AKfycbw61XMKYhGvjLVcHlald5x2VfBAU4lgQaEBN01Lk1UiHg2Fu9CmZhOqTcoLjq-z04hb/exec'; // <<<< set this after deploying GAS
 const POLL_MS = 1000;
 const TIMER_SECONDS = 5;
 const MAX_TEAMS = 10;
