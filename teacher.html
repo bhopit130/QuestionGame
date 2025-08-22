@@ -1,0 +1,72 @@
+
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GameShow • Teacher</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="questions.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body data-role="teacher">
+  <div class="container">
+    <div class="header">
+      <div class="brand">
+        <div class="logo"></div>
+        <h1>GameShow ห้องครู</h1>
+      </div>
+      <div class="role-badge">TEACHER</div>
+    </div>
+
+    <div class="grid">
+      <div class="card col-4 col-md-12">
+        <h2>ตั้งค่า / ทีม</h2>
+        <div class="row" style="margin-bottom:10px">
+          <input id="room" class="input" value="room1" placeholder="รหัสห้อง (เช่น room1)">
+        </div>
+        <div class="row">
+          <input id="teamName" class="input" placeholder="ชื่อทีม (เพิ่มใหม่)">
+          <button id="addTeam" class="btn primary">เพิ่มทีม</button>
+        </div>
+        <div id="teams" style="margin-top:12px"></div>
+      </div>
+
+      <div class="card col-8 col-md-12">
+        <h2>กระดานเกม</h2>
+        <div id="board"></div>
+        <div class="row" style="margin-top:12px">
+          <button class="btn warn" id="endGame">จบเกม & สรุปอันดับ</button>
+          <button class="btn" id="resetGame">เริ่มเกมใหม่</button>
+        </div>
+      </div>
+
+      <div class="card col-7 col-md-12">
+        <h2>คำถามปัจจุบัน</h2>
+        <div id="currentQ"></div>
+        <div class="row" style="margin:10px 0">
+          <div class="badge">ตัวจับเวลา: <span id="timer" class="timer">พร้อมเริ่ม</span></div>
+          <button class="btn ok" id="startTimer">เริ่ม (5 วิ)</button>
+          <button class="btn" id="revealAns">ดูเฉลย</button>
+        </div>
+        <div class="row">
+          <div class="badge">เฉลย:</div>
+          <div id="ansText" style="margin-left:8px"></div>
+        </div>
+      </div>
+
+      <div class="card col-5 col-md-12">
+        <h2>คำตอบที่ส่งมา</h2>
+        <div id="submissions"></div>
+        <div id="awardWrap" style="margin-top:12px"></div>
+      </div>
+
+      <div class="card col-12">
+        <div id="standings"></div>
+      </div>
+    </div>
+
+    <div class="footer">เคล็ดลับ: ให้นักเรียนเปิด <strong>student.html</strong> ใส่รหัสห้องเดียวกัน แล้วเข้าทีมของตัวเอง</div>
+  </div>
+</body>
+</html>

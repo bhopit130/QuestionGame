@@ -1,0 +1,57 @@
+
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GameShow • Student</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="questions.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body data-role="student">
+  <div class="container">
+    <div class="header">
+      <div class="brand">
+        <div class="logo"></div>
+        <h1>GameShow ห้องนักเรียน</h1>
+      </div>
+      <div class="role-badge">STUDENT</div>
+    </div>
+
+    <div class="grid">
+      <div class="card col-4 col-md-12">
+        <h2>เข้าร่วมทีม</h2>
+        <div class="row" style="margin-bottom:10px">
+          <input id="roomS" class="input" value="room1" placeholder="รหัสห้อง (รับจากครู)">
+        </div>
+        <div class="row">
+          <input id="teamNameS" class="input" placeholder="พิมพ์ชื่อทีม (สร้างหรือเข้าร่วม)">
+          <button id="joinTeam" class="btn primary">เข้าร่วม</button>
+        </div>
+        <div id="youAre" style="margin-top:10px"></div>
+      </div>
+
+      <div class="card col-8 col-md-12">
+        <h2>กระดานเกม</h2>
+        <div id="boardS"></div>
+      </div>
+
+      <div class="card col-12">
+        <h2>คำถาม</h2>
+        <div id="currentQS"></div>
+        <div class="row" style="margin:10px 0">
+          <div class="badge">ตัวจับเวลา: <span id="timerS" class="timer">รอเริ่ม</span></div>
+        </div>
+        <div class="row">
+          <input id="answerText" class="input" placeholder="พิมพ์คำตอบของทีม…">
+          <button id="sendAnswer" class="btn ok">ส่งคำตอบ</button>
+        </div>
+        <div id="infoS" style="margin-top:8px; color:#9fb0c8"></div>
+      </div>
+    </div>
+
+    <div class="footer">หลังจากครบ 5 วิ ปุ่มส่งคำตอบจะพร้อมใช้งาน</div>
+  </div>
+</body>
+</html>
